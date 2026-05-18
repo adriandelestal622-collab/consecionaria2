@@ -29,7 +29,7 @@ function calcularFinanciacion() {
     let cuotas = parseInt(document.getElementById('cuotas').value);
     
     // Cotización del dólar (ACTUALIZAR MANUALMENTE)
-    let dolarBlue = 1220; // CAMBIAR SEGÚN COTIZACIÓN
+    let dolarBlue = 1420; // CAMBIAR SEGÚN COTIZACIÓN
     
     // Validaciones
     if (isNaN(precio) || precio <= 0) {
