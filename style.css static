@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fc, #eef2f8);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container-custom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;  
+}
+
+/* HEADER PROFESIONAL */
+.header-premium {
+    background: white;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.premium-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e2a3e;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.premium-subtitle {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-top: 2px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #495057;
+}
+
+.contact-item i {
+    color: #c9a03d;
+    font-size: 1rem;
+}
+
+.header-logos {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-left: 1px solid #e0e0e0;
+    padding-left: 1.5rem;
+}
+
+.header-logo-img {
+    height: 28px;
+    width: auto;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.header-logo-img:hover {
+    opacity: 1;
+}
+
+/* CARRUSEL PRINCIPAL */
+.carousel {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    bottom: 20px;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* TÍTULO CLÁSICO */
+.titulo-clasico {
+    font-family: 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1e2a3e;
+    text-transform: uppercase;
+    border-bottom: 2px solid #c9a03d;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+}
+
+.contenedor-titulo {
+    text-align: center;
+}
+
+/* TARJETAS DE AUTOS */
+.car-card {
+    background: white;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    height: 100%;
+    cursor: pointer;
+}
+
+.car-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.car-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.car-card .p-3 {
+    padding: 0.8rem !important;
+}
+
+.car-card h5 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.car-card .text-muted {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.price-badge {
+    background: #1e2a3e;
+    color: #c9a03d;
+    padding: 0.2rem 0.8rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.btn-dark-gold {
+    background: #1e2a3e;
+    color: white;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    transition: 0.2s;
+    font-size: 0.8rem;
+}
+
+.btn-dark-gold:hover {
+    background: #c9a03d;
+    color: #1e2a3e;
+}
+
+.form-modern {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.floating-toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1e2a3e;
+    color: #c9a03d;
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: none;
+    z-index: 9999;
+    font-weight: bold;
+}
+
+footer {
+    background: #1e2a3e;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+
+/* MODAL */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.image-modal .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.image-modal .close-modal:hover {
+    color: #c9a03d;
+}
+
+/* RESULTADO FINANCIACIÓN */
+.resultado-financiacion {
+    background: #e8f4f8;
+    border-left: 4px solid #c9a03d;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.resultado-financiacion h5 {
+    color: #1e2a3e;
+    margin-bottom: 0.8rem;
+}
+
+/* 3 COLUMNAS */
+.row.g-3 > div {
+    flex: 0 0 auto;
+    width: 33.333%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .premium-title {
+        font-size: 1.4rem;
+    }
+    .header-premium {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    .contact-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header-logos {
+        border-left: none;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .carousel-item img {
+        height: 250px;
+    }
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+    .row.g-3 > div {
+        width: 100%;
+    }
+    .titulo-clasico {
+        font-size: 1.5rem;
+    }
+    .car-img {
+        height: 180px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .row.g-3 > div {
+        width: 50%;
+    }
+}
+.floating-toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-family: 'Segoe UI', sans-serif;
+}
